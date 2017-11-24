@@ -652,8 +652,8 @@ ItemUseBicycle:
 	ld hl,GotOffBicycleText
 	jr .printText
 .tryToGetOnBike
-	call IsBikeRidingAllowed
-	jp nc,NoCyclingAllowedHere
+	;call IsBikeRidingAllowed
+	;jp nc,NoCyclingAllowedHere
 	call ItemUseReloadOverworldData
 	xor a ; no keys pressed
 	ld [hJoyHeld],a ; current joypad state

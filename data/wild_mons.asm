@@ -7,7 +7,7 @@ WildDataPointers:
 	dw NoMons      ; VERMILION_CITY
 	dw NoMons      ; CELADON_CITY
 	dw NoMons      ; FUCHSIA_CITY
-	dw NoMons      ; CINNABAR_ISLAND
+	dw WaterMons   ; CINNABAR_ISLAND
 	dw NoMons      ; INDIGO_PLATEAU
 	dw NoMons      ; SAFFRON_CITY
 	dw NoMons      ; unused

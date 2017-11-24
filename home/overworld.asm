@@ -782,6 +782,7 @@ StopMusic::
 	jp StopAllSounds
 
 HandleFlyWarpOrDungeonWarp::
+	callab LoadWildData
 	call UpdateSprites
 	call Delay3
 	xor a
@@ -821,7 +822,7 @@ LoadPlayerSpriteGraphics::
 .ridingBike
 	; If the bike can't be used,
 	; start walking instead.
-	call IsBikeRidingAllowed
+	;call IsBikeRidingAllowed
 	jr c, .determineGraphics
 
 .startWalking

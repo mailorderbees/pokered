@@ -43,11 +43,16 @@ OakSpeech:
 	call SetDefaultNames
 	predef InitPlayerData2
 	ld hl,wNumBoxItems
-	ld a,POTION
+	ld a,MASTER_BALL
+	ld [wcf91],a
+	ld a,100
+	ld [wItemQuantity],a
+	call AddItemToInventory  ; give one hundred master ball
+	ld a,BICYCLE
 	ld [wcf91],a
 	ld a,1
 	ld [wItemQuantity],a
-	call AddItemToInventory  ; give one potion
+	call AddItemToInventory ; fuck it, gimme BICYCLE
 	ld a,[wDefaultMap]
 	ld [wDestinationMap],a
 	call SpecialWarpIn

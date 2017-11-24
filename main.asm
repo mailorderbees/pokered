@@ -5,7 +5,7 @@ NPC_SPRITES_2 EQU $5
 
 GFX EQU $4
 
-PICS_1 EQU $9
+PICS_1 EQU $2D
 PICS_2 EQU $A
 PICS_3 EQU $B
 PICS_4 EQU $C
@@ -22,7 +22,7 @@ INCLUDE "engine/black_out.asm"
 
 MewPicFront:: INCBIN "pic/bmon/mew.pic"
 MewPicBack::  INCBIN "pic/monback/mewb.pic"
-INCLUDE "data/baseStats/mew.asm"
+;INCLUDE "data/baseStats/mew.asm"
 
 INCLUDE "engine/battle/safari_zone.asm"
 
@@ -576,6 +576,8 @@ PinsirPicFront::      INCBIN "pic/bmon/pinsir.pic"
 PinsirPicBack::       INCBIN "pic/monback/pinsirb.pic"
 TangelaPicFront::     INCBIN "pic/bmon/tangela.pic"
 TangelaPicBack::      INCBIN "pic/monback/tangelab.pic"
+PichuPicFront::		  INCBIN "pic/bmon/pichu.pic"
+PichuPicBack::        INCBIN "pic/monback/pichub.pic"
 
 
 SECTION "Battle (bank 9)", ROMX, BANK[$9]

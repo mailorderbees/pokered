@@ -298,6 +298,16 @@ _TangelaDexEntry::
 	next "shake as it walks"
 	dex
 
+_PichuDexEntry::
+	text "Pokedex text"
+	next "will go here"
+	next "when I know"
+
+	page "what it"
+	next "will say"
+	next "for sure"
+	dex
+
 _GrowlitheDexEntry::
 	text "Very protective"
 	next "of its territory."
